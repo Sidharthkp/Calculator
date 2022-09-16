@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="http://fonts.cdnfonts.com/css/scientific-calculator-lcd" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <section class="calc-bod">
+        <div class="calc-disp">
+            <input type="text" id="screen">
+        </div>
+        <div class="button-space">
+            <div class="row-button">
+                <button onclick="clearDisplay('')" class="button-common1" id="ac-button" type="button">A/C</button>
+                <button onclick="buttonClick('/')" class="button-common1" id="buttons" type="button">/</button>
+                <button onclick="buttonClick('*')" class="button-common1" id="buttons" type="button">*</button>
+                <button onclick="buttonClick('-')" class="button-common1" id="buttons" type="button">-</button>
+            </div>
+            <div class="row-button">
+                <button onclick="buttonClick('7')" class="button-common1" id="buttons" type="button">7</button>
+                <button onclick="buttonClick('8')" class="button-common1" id="buttons" type="button">8</button>
+                <button onclick="buttonClick('9')" class="button-common1" id="buttons" type="button">9</button>
+                <button onclick="buttonClick('+')" class="button-common2" id="buttons" type="button">+</button>
+            </div>
+            <div class="row-button">
+                <button onclick="buttonClick('4')" class="button-common1" id="buttons" type="button">4</button>
+                <button onclick="buttonClick('5')" class="button-common1" id="buttons" type="button">5</button>
+                <button onclick="buttonClick('6')" class="button-common1" id="buttons" type="button">6</button>
+            </div>
+            <div class="row-button">
+                <button onclick="buttonClick('1')" class="button-common1" id="buttons" type="button">1</button>
+                <button onclick="buttonClick('2')" class="button-common1" id="buttons" type="button">2</button>
+                <button onclick="buttonClick('3')" class="button-common1" id="buttons" type="button">3</button>
+                <button onclick="equalClick('')" class="button-common2" id="buttons" type="button" style="background-color: green;">=</button>
+            </div>
+            <div class="row-button">
+                <button onclick="buttonClick('0')" id="buttons" class="button0" type="button">0</button>
+                <button onclick="buttonClick('.')" id="buttons" class="button-common1" type="button">.</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
